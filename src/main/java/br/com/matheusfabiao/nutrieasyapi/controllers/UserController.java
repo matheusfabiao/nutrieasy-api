@@ -1,5 +1,6 @@
 package br.com.matheusfabiao.nutrieasyapi.controllers;
 
+import br.com.matheusfabiao.nutrieasyapi.dto.UserMinDTO;
 import br.com.matheusfabiao.nutrieasyapi.entities.User;
 import br.com.matheusfabiao.nutrieasyapi.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,8 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
-    public List<User> findAll(){
-        List<User> result = userService.findAll();
+    public List<UserMinDTO> findAll(){
+        List<UserMinDTO> result = userService.findAll();
         return result;
     }
 }

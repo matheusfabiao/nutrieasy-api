@@ -1,4 +1,4 @@
-package br.com.matheusfabiao.nutrieasyapi.model;
+package br.com.matheusfabiao.nutrieasyapi.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
